@@ -13,10 +13,13 @@
 		EA5560272838221800DC42A3 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560262838221800DC42A3 /* Tests_macOSLaunchTests.swift */; };
 		EA5560282838221800DC42A3 /* CodeGaragePruebaFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560002838221400DC42A3 /* CodeGaragePruebaFinalApp.swift */; };
 		EA5560292838221800DC42A3 /* CodeGaragePruebaFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560002838221400DC42A3 /* CodeGaragePruebaFinalApp.swift */; };
-		EA55602A2838221800DC42A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560012838221400DC42A3 /* ContentView.swift */; };
-		EA55602B2838221800DC42A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560012838221400DC42A3 /* ContentView.swift */; };
+		EA55602A2838221800DC42A3 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560012838221400DC42A3 /* TopView.swift */; };
 		EA55602C2838221800DC42A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5560022838221800DC42A3 /* Assets.xcassets */; };
 		EA55602D2838221800DC42A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5560022838221800DC42A3 /* Assets.xcassets */; };
+		EA5560412838227200DC42A3 /* modelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5560402838227200DC42A3 /* modelList.swift */; };
+		EA7BE985283853450011DE26 /* ViewModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7BE984283853450011DE26 /* ViewModelList.swift */; };
+		EA7BE9882838578B0011DE26 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7BE9872838578B0011DE26 /* Home.swift */; };
+		EAA1F3C9283A91560069C55A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA1F3C8283A91560069C55A /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		EA5560002838221400DC42A3 /* CodeGaragePruebaFinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGaragePruebaFinalApp.swift; sourceTree = "<group>"; };
-		EA5560012838221400DC42A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA5560012838221400DC42A3 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		EA5560022838221800DC42A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5560072838221800DC42A3 /* CodeGaragePruebaFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeGaragePruebaFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA55600D2838221800DC42A3 /* CodeGaragePruebaFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeGaragePruebaFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +52,10 @@
 		EA5560202838221800DC42A3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5560242838221800DC42A3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		EA5560262838221800DC42A3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		EA5560402838227200DC42A3 /* modelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelList.swift; sourceTree = "<group>"; };
+		EA7BE984283853450011DE26 /* ViewModelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelList.swift; sourceTree = "<group>"; };
+		EA7BE9872838578B0011DE26 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EAA1F3C8283A91560069C55A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				EA5560002838221400DC42A3 /* CodeGaragePruebaFinalApp.swift */,
-				EA5560012838221400DC42A3 /* ContentView.swift */,
+				EA7BE986283857770011DE26 /* View */,
+				EA7BE983283852F60011DE26 /* ViewModel */,
+				EA55603F2838225F00DC42A3 /* Model */,
 				EA5560022838221800DC42A3 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +148,33 @@
 				EA5560262838221800DC42A3 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		EA55603F2838225F00DC42A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA5560402838227200DC42A3 /* modelList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA7BE983283852F60011DE26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA7BE984283853450011DE26 /* ViewModelList.swift */,
+			);
+			name = ViewModel;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA7BE986283857770011DE26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA7BE9872838578B0011DE26 /* Home.swift */,
+				EA5560012838221400DC42A3 /* TopView.swift */,
+				EAA1F3C8283A91560069C55A /* ListView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA55602A2838221800DC42A3 /* ContentView.swift in Sources */,
+				EA55602A2838221800DC42A3 /* TopView.swift in Sources */,
+				EA5560412838227200DC42A3 /* modelList.swift in Sources */,
+				EAA1F3C9283A91560069C55A /* ListView.swift in Sources */,
+				EA7BE9882838578B0011DE26 /* Home.swift in Sources */,
+				EA7BE985283853450011DE26 /* ViewModelList.swift in Sources */,
 				EA5560282838221800DC42A3 /* CodeGaragePruebaFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA55602B2838221800DC42A3 /* ContentView.swift in Sources */,
 				EA5560292838221800DC42A3 /* CodeGaragePruebaFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
